@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style/signup.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign up</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Sign upls</div>
+      <div class="content">
+        <form id="form">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                id="fullname"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Username</span>
+              <input type="text" placeholder="Enter your username" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input
+                type="text"
+                placeholder="Enter your email"
+                id="email"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Password</span>
+              <input
+                type="password"
+                placeholder="Enter your password"
+                id="password"
+                minlength="6"
+                maxlength="12"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">User</span>
+              <select>
+                <option value="">--- select option ---</option>
+                <option value="customer">customer</option>
+                <option value="admin">admin</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <span class="password-intruction"
+                >Password must be at least (6) characters long and maximum of
+                (12) characters</span
+              >
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="Submit" id="button" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
